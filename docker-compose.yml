@@ -14,12 +14,12 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
-    image: base-rudp:latest
+    image: base-cppsk:latest
     stdin_open: true
     tty: true
   dev-server:
-    container_name: rudp-dev-server
-    image: base-rudp:latest
+    container_name: cppsk-dev-server
+    image: base-cppsk:latest
     ports:
       - '2222:22'
       - '7777:7777'
@@ -31,11 +31,11 @@ services:
         script/build.sh &&
         script/test.sh
       "
-    container_name: rudp-test
+    container_name: cppsk-test
     environment:
       - BUILD_DIR_PATH=/var/project/cmake-build-debug-docker
       - BUILD_TYPE=Debug
-    image: base-rudp:latest
+    image: base-cppsk:latest
     <<: *VOLUMES
   release:
     command: >
@@ -44,11 +44,11 @@ services:
         script/test.sh &&
         script/release.sh
       "
-    container_name: rudp-release
+    container_name: cppsk-release
     environment:
       - BUILD_DIR_PATH=/var/project/cmake-build-release-docker
       - BUILD_TYPE=Release
-    image: base-rudp:latest
+    image: base-cppsk:latest
     <<: *VOLUMES
 volumes:
   cmake_build_debug_docker:

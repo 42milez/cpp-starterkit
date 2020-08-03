@@ -1,4 +1,5 @@
 # Reliable UDP
+![Travis (.org) branch](https://img.shields.io/travis/42milez/cpp-starterkit/master) ![Codecov branch](https://img.shields.io/codecov/c/gh/42milez/cpp-starterkit/master)
 
 ## Development
 #### Build docker image

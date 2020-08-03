@@ -1,3 +1,3 @@
-add_executable(rudp main.cc)
+add_executable(cppsk main.cc)
 add_subdirectory(core)
-target_link_libraries(rudp core)
+target_link_libraries(cppsk core)

@@ -11,13 +11,13 @@ WORK_DIR=/var/project
 LOG_DIR=$WORK_DIR/log
 LOG_FILE=$LOG_DIR/script-release.log
 GITHUB_USER=42milez
-GITHUB_REPO=rudp
-RELEASE_NAME=rudp-$(date +%Y%m%d-%H%M%S)
-ASSET_NAME_LINUX64=rudp-linux64
+GITHUB_REPO=cppsk
+RELEASE_NAME=cppsk-$(date +%Y%m%d-%H%M%S)
+ASSET_NAME_LINUX64=cppsk-linux64
 
 mkdir -p $LOG_DIR
 
-cp -p $BUILD_DIR_PATH/src/rudp $WORK_DIR/$ASSET_NAME_LINUX64
+cp -p $BUILD_DIR_PATH/src/cppsk $WORK_DIR/$ASSET_NAME_LINUX64
 
 : 'CREATE NEW RELEASE' &&
 {

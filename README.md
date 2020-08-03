@@ -1,4 +1,4 @@
-# Reliable UDP
+# C++ Starter Kit
 ![Travis (.org) branch](https://img.shields.io/travis/42milez/cpp-starterkit/master) ![Codecov branch](https://img.shields.io/codecov/c/gh/42milez/cpp-starterkit/master)
 
 ## Development
@@ -10,7 +10,7 @@ docker-compose build
 ```
 
 #### Start dev-server
-Any files are not transferred to dev-server by default. If you use [CLion](https://www.jetbrains.com/clion/), you can deploy your project by following [the instruction](https://github.com/42milez/rudp/wiki/Remote-Debugging-with-CLion).
+Any files are not transferred to dev-server by default. If you use [CLion](https://www.jetbrains.com/clion/), you can deploy your project by following [the instruction](https://github.com/42milez/cppsk/wiki/Remote-Debugging-with-CLion).
 ```
 docker-compose up -d dev-server
 ```
